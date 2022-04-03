@@ -1,27 +1,150 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 
+body{
+    background-color: #fffefc;
 }
 
 .super_container{
-
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .hdr{
+    margin-top: 50px;
+}
 
+.hdr > h1{
+    width: 566px;
+    margin: auto;
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
 }
 
 .section_wraper{
-
+    font-family: 'News Cycle', sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    color: #525151;
 }
 
 .left_section{
+    padding: 40px;
+    border-right: 1px solid #cac1b0;
+}
 
+.left_section > article{
+    padding-bottom: 40px;
+}
+
+.left_section > img {
+    min-width: 294px;
+    width: 80%;
+    margin: auto;
+    display: flex;
 }
 
 .right_section{
+    padding: 40px;
+}
 
+.right_section > article{
+    padding-bottom: 40px;
+}
+
+.right_section > article > h4{
+    color: black;
+}
+
+.form_wraper{
+    width: 700px;
+    margin: auto;
+    padding: 40px;
+    border: 1px dashed black;
 }
 
 .form{
-    
+    width: 517px;
+    margin: auto;
 }
+
+.form > div:nth-child(n+2){
+    margin-top: 20px;
+}
+
+.form > div:nth-child(n+2) > input{
+    width: 500px;
+    padding: 4px;
+    margin-top: 4px;
+}
+select{
+    width: 500px;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+button{
+    margin-top: 32px;
+    border: none;
+    background-color: #7af07a;
+    color: #339933;
+    padding: 6px 18px 6px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 3px #dadada;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 820px){
+    .hdr > h1{
+        width: 400px;
+        font-size: 20px;   
+    }
+    .section_wraper {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left_section{
+        padding: 0px;
+        border-right: none;
+        margin-bottom: 40px;
+    }
+
+    .left_section > img {
+        min-width: 298px;
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+    }
+
+    .right_section{
+        padding: 0px;
+        border-right: none;
+    }
+
+    .form_wraper{
+        min-width: 300px;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        border: 1px dashed black;
+    }
+
+    .form{
+        width: 90%;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    select{
+        width: 100%;
+    }
+
+    .form > div:nth-child(n+2) > input{
+        width: 100%;;
+    }
+}
+
