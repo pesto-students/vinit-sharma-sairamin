@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+}
+
+.container-box{
+    display: flex;
+    width: 400px;
+    margin: auto;
+    height: 200px;
+    background-color: #fbfbe7;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-box > div{
+    display: flex;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box-1{
+    background-color: red;
+    
+}
+.box-2{
+    background-color: yellow;
+}
+.box-3{
+    background-color: blue;
+}
+.box-4{
+    background-color: green;
+}
