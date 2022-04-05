@@ -1,18 +1,18 @@
 body{
-    background-color: bisque;
+    background-color: #f9f7f8;
 }
 
+/* simple html structure */
 .container-box{
     display: flex;
     width: 400px;
     margin: auto;
     height: 200px;
-    background-color: #fbfbe7;
+    background-color: #f9e1da;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 2px 1px #e3ccc5;
 }
-
-
 .container-box > div{
     display: flex;
 }
@@ -36,6 +36,11 @@ body{
 }
 .box-5{
     background-color: rgb(2, 2, 2);
+}
+h1, h4{
+    text-align: center;
+    font-family: system-ui;
+    margin: 40px 0px 40px 0px;
 }
 
 
