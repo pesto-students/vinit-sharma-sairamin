@@ -34,3 +34,27 @@ body{
 .box-4{
     background-color: green;
 }
+.box-5{
+    background-color: rgb(2, 2, 2);
+}
+
+
+/* css for div Transformation */
+.box{
+    transition:  transform 0.5s;
+}
+.container-box:hover > .wraper-1 > .box-1{   
+    transform: rotate(90deg) translate(0px, 100px);
+}
+
+.container-box:hover > .wraper-1 > .box-2{
+    transform: rotate(-90deg) translate(0px, 100px);
+}
+
+.container-box:hover > .wraper-2 > .box-3{
+    transform: rotate(-90deg) translate(0px, -100px);
+}
+
+.container-box:hover > .wraper-2 > .box-4{
+    transform: rotate(90deg) translate(0px, -100px);
+}
