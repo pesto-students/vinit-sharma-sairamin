@@ -1,5 +1,3 @@
-   Document
-
 ASSIGNMENT-1
 ============
 
