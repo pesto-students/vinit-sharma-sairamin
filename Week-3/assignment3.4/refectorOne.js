@@ -1,3 +1,5 @@
+// writing a code using concept of closure such that there is noway to access items array outside of createStack() function scope
+
 
 //function to create data-stack 
 function createStack() {
