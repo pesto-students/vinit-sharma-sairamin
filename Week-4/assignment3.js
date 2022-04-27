@@ -4,7 +4,7 @@
  * 2.For Loops, Maps should not have been used.4.3rd party libraries should not have been used.
 **/
 
-
+//fibonacci series with iterators
 const fibonacci = {
     n: 5,
     [Symbol.iterator]: function() {
@@ -32,10 +32,15 @@ const fibonacci = {
 
 let outcome = fibonacci[Symbol.iterator]();
 
-console.log(outcome.next());
-console.log(outcome.next());
-console.log(outcome.next());
-console.log(outcome.next());
-console.log(outcome.next());
-console.log(outcome.next());
-console.log(outcome.next());
+console.log(outcome.next()); //{ value: 0, done: false }
+console.log(outcome.next()); //{ value: 1, done: false }
+console.log(outcome.next()); //{ value: 1, done: false }
+console.log(outcome.next()); //{ value: 2, done: false }
+console.log(outcome.next()); //{ value: 3, done: false }
+console.log(outcome.next()); //{ value: 5, done: false }
+console.log(outcome.next()); //{ done: true }
+
+
+for (let num of fibonacci) {
+    console.log(num); //0 1 1 2 3 5
+}
