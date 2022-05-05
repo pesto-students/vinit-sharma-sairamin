@@ -1,0 +1,141 @@
+body{
+    font-family: lato;
+    margin: 0;
+}
+
+.super_Container{
+    display: flex;
+    width: 100%;
+}
+
+/* for nav bar */
+.nav_Container{
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.nav_Container > ul{
+    display: contents;
+}
+
+.nav_Container > ul > li{
+    font-size: 20px;
+    text-align: center;
+    margin: 42px 0px 42px 0px;
+    cursor: pointer;
+}
+
+
+.cntnt_Container{
+    width: 100%;
+}
+
+/* for header  */
+.hdr{
+    background-color: #454545;
+    padding: 32px;
+    display: flex;
+    color: white;
+}
+.hdr_Cntnt_Wraper{
+    margin-left: 35px;
+}
+.hdr_Cntnt_Wraper > h1{
+    margin-top: 0px;
+}
+.hdr_Cntnt_Wraper > p{
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+.hdr_Media_Wraper{
+    margin-top: 126px;
+}
+.hdr_Media_Wraper > span{
+    margin-right:  40px;
+    cursor: pointer;
+}
+
+/* for table */
+.table{
+    width: 100%;
+    padding: 12px;
+}
+tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+td{
+    padding: 8px;
+}
+td > button{
+    background-color: #f5f5f500;
+    color: blue;
+    font-weight: 600;
+    padding: 4px;
+    cursor: pointer; 
+}
+
+/* for footer */
+.footer{
+    width: 100%;
+    background-color: #43689b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.ftr_Left{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.ftr_Left > img{
+    width: 150px;
+}
+.ftr_Left > :nth-child(2){
+    margin-left: 20px;
+}
+.ftr_Right{
+    width: 60%;
+}
+.ftr_Right > ul{
+    list-style: none;
+    float: right;
+}
+.ftr_Right > ul > li{
+    display: inline;
+    margin: 0px 10px 0px 140px;
+}
+
+/* css for responsiveness */
+@media only screen and (max-width: 600px) {
+    .hdr{
+        display: flex;
+        flex-direction: column;
+    }
+    .hdr_Cntnt_Wraper {
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+    .hdr_Media_Wraper {
+        margin-top: 20px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .ftr_Left{
+        flex-direction: column;
+    }
+    .ftr_Right > ul{
+        float: none;
+        padding: 0px;
+        text-align: center;
+    }
+    .ftr_Right > ul > li{
+        margin: 10px;
+    }
+    .ftr_Left > :nth-child(2){
+        margin-left: 0px;
+    }
+  }
