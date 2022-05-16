@@ -26,20 +26,22 @@ function doTask3(time){
 //getting response using async-await functionality
 async function getAsyncResponse(time){
     const response1 = await doTask1(time);
-    console.log(response1);
+    console.log(response1); //resolved task 1
 
     const response2 = await doTask2(time);
-    console.log(response2);
+    console.log(response2); //resolved task 2
 
     const response3 = await doTask3(time);
-    console.log(response3);
+    console.log(response3); //resolved task 3
 }
 
-//getAsyncResponse(1000); //calling async functions
+getAsyncResponse(1000); //calling async functions
 
 
+//----------------------------------------------------------------
 
-//asynchronous operation using async/await using generators
+
+//asynchronous operation using async/await and generators
 async function* generator(time1, time2, time3){
 
     const response1 = await doTask1(time1);
@@ -56,7 +58,7 @@ async function* generator(time1, time2, time3){
 }
 
 let value = generator(1000, 2000, 3000);
-value.next().then(data => console.log(data)); //resolved task 1
-value.next().then(data => console.log(data)); // resolved task 2
-value.next().then(data => console.log(data)); //resolved task 3
+value.next().then(data => console.log(data)); //{ value: 'resolved task 1', done: false }
+value.next().then(data => console.log(data)); //{ value: 'resolved task 2', done: false }
+value.next().then(data => console.log(data)); //{ value: 'resolved task 3', done: false }
 value.next();
