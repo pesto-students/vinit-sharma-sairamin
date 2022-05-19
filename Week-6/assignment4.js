@@ -14,13 +14,11 @@ function maximumProfit(ar){
     maxValue = 0;
 
     //checking if array is in decending order 
-    while(0<arSize){
-        if(ar[count]>ar[count+1]){   
-            count++;
-            arSize--     
+    for( let { index, value } of ar){
+        if(ar[index]>ar[index+1]){
+            status = true
         }else {
             status = false;
-            break;
         }
     }
 
