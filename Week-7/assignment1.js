@@ -78,9 +78,12 @@ for(let el of arr){ //adding values in ink list
 }
 
 //regular linked list
-console.log(node.printList()); //output - 1 2 3 4 5 6 7 8
+console.log("Regular LinkedList", node.printList()); //output - 1 2 3 4 5 6 7 8
 
 node.reverse(); //reversing the link list
 
 //printing the values of reversed linked list
-console.log(node.printList()); //output - 8 7 6 5 4 3 2 1
+console.log("Reversed LinkedList", node.printList()); //output - 8 7 6 5 4 3 2 1
+
+//time complexity is O(N)
+//space complexity is O(1)
