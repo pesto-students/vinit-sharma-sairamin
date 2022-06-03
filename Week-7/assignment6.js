@@ -97,3 +97,6 @@ console.log(dequeValue);// 3
 
 //print the value after dequeue value
 console.log(newQue.printQue()); [ 4, 5 ];
+
+//time complexity O(N)
+//space Complexity O(N)
