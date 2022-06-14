@@ -1,0 +1,29 @@
+.todoitem_container {
+  justify-content: space-between;
+  padding: 10px 15px 10px 5px;
+  font-size: 18px;
+  color: #6b8f8f;
+  font-family: sans-serif;
+  background: #e4fcfc;
+  margin-bottom: 6px;
+}
+
+.todoitem_text {
+  text-align: left;
+  display: inline-block;
+  width: 90%;
+  cursor: pointer;
+}
+
+.todoitem_delete_button {
+  color: #e58989;
+  text-align: right;
+  display: inline-block;
+  width: 6%;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #c46353;
+}

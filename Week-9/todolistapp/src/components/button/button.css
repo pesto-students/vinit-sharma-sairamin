@@ -1,0 +1,13 @@
+.add_todoitem_button{
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 44px;
+    box-shadow: 1px 1px 1px 1px #a6c3c3;
+    color: #66a466;
+    font-weight: 700;
+    margin-top: 25px;
+    background-color: #bffabf;
+    cursor: pointer;
+}
