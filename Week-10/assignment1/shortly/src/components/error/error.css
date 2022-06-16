@@ -1,0 +1,24 @@
+.error_container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  background-color: #f07979;
+  margin-bottom: -12px;
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.error_container div:nth-child(1) {
+  margin-right: 38px;
+}
+
+.error_container div:nth-child(2) {
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  color: #ed6565;
+  box-shadow: 0px 1px 3px 1px #984b4b;
+  cursor: pointer;
+}

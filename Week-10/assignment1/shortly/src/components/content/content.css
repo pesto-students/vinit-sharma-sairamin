@@ -1,0 +1,29 @@
+.main_super_container {
+}
+
+.main_sub_container_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 78px;
+}
+
+.sub_container_1_text_wraper {
+}
+
+.sub_container_1_text_wraper > h1 {
+  font-size: 42px;
+}
+
+.sub_container_1_img_wraper {
+}
+
+.sub_container_1_img_wraper > img {
+  width: 500px;
+}
+
+.main_sub_container_2 {
+}
+
+.main_sub_container_3 {
+}
