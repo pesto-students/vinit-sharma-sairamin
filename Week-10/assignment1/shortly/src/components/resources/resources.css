@@ -1,0 +1,8 @@
+.resources_super_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: #5b85ab;
+  font-size: 30px;
+}
